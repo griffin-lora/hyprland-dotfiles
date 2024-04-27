@@ -17,7 +17,7 @@
 @define-color backgroundlight transparent;
 @define-color backgrounddark transparent;
 @define-color workspacesbackground1 rgba(204, 204, 204, 0.5);
-@define-color workspacesbackground2 #FFFFFF;
+@define-color workspacesbackground2 linear-gradient(to bottom right, #33ccff, #00ff99);
 @define-color bordercolor #FFFFFF;
 @define-color textcolor1 #FFFFFF;
 @define-color textcolor2 #FFFFFF;
@@ -32,13 +32,11 @@
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
     border-radius: 0px;
-    /*margin-bottom: -5px;*/
 }
 
 window#waybar {
     background-color: rgba(0,0,0,0);
     border-bottom: 0px solid #ffffff;
-    /* color: #FFFFFF; */
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -70,8 +68,7 @@ window#waybar {
 
 #workspaces button.active {
     color: @textcolor1;
-    /*background: @workspacesbackground2;*/
-    background: linear-gradient(to bottom right, #33ccff, #00ff99);
+    background: @workspacesbackground2;
     border-radius: 15px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
@@ -79,8 +76,7 @@ window#waybar {
 
 #workspaces button:hover {
     color: @textcolor1;
-    /*background: @workspacesbackground2;*/
-    background: linear-gradient(to bottom right, #33ccff, #00ff99);
+    background: @workspacesbackground2;
     border-radius: 15px;
 }
 
