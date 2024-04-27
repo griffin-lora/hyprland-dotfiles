@@ -1,8 +1,11 @@
 import subprocess
 
-proc = subprocess.check_output(["eww", "open", "window-background"])
+completed_proc = subprocess.run(["pgrep", "-l", "rofi"])
 
-proc = subprocess.Popen(["rofi", "-show", "drun"])
-proc.wait()
+if completed_proc.returncode == 1:
+    subprocess.check_output(["eww", "open", "window-background"])
 
-proc = subprocess.check_output(["eww", "close", "window-background"])
+    proc = subprocess.Popen(["rofi", "-show", "drun"])
+    proc.wait()
+
+    subprocess.check_output(["eww", "close", "window-background"])
