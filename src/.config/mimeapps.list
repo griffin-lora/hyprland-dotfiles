@@ -1,0 +1,14 @@
+[Default Applications]
+inode/directory=thunar.desktop
+application/x-zerosize=vscodium-wayland.desktop
+image/jpeg=qimgv.desktop
+image/webp=qimgv.desktop
+
+[Added Associations]
+inode/directory=thunar.desktop;
+text/plain=vscodium-wayland.desktop;vscodium.desktop;
+application/x-zerosize=vscodium-wayland.desktop;
+text/x-csrc=vscodium-wayland.desktop;
+image/jpeg=gimp.desktop;firefox.desktop;qimgv.desktop;
+image/webp=gimp.desktop;qimgv.desktop;
+application/pdf=firefox.desktop;
