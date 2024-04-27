@@ -1,0 +1,15 @@
+configuration {
+  modes: [ combi, drun, window, filebrowser, recursivebrowser ];
+  combi-modes: [ window, drun, run ];
+  terminal: "alacritty";
+  show-icons: true;
+  hover-select: true;
+  me-select-entry: "";
+  me-accept-entry: [ MousePrimary, MouseSecondary, MouseDPrimary ];
+  ml-row-left: "ScrollUp";
+  ml-row-right: "ScrollDown";
+  ml-row-up: "ScrollRight";
+  ml-row-down: "ScrollLeft";
+}
+
+@theme "~/.local/share/rofi/themes/launchpad.rasi"
