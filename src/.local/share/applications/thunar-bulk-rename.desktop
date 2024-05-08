@@ -238,3 +238,4 @@ Terminal=false
 StartupNotify=true
 Type=Application
 Categories=Utility;Core;GTK;Filesystem;
+Hidden=true
