@@ -13,7 +13,7 @@
 
     // Position TOP
     // "layer": "top",
-    "margin-bottom": -19,
+    "margin-bottom": 0,
 
     // Position BOTTOM
     // "position": "bottom",
@@ -21,8 +21,8 @@
     // "margin-bottom": 14,
     
     "layer": "bottom",
-    "margin-left": 10,
-    "margin-right": 10,    
+    "margin-left": 5,
+    "margin-right": 5,    
     "spacing": 0,
 
     // Load Modules
