@@ -1,7 +1,22 @@
 (defwindow window-background
     :monitor 0
     :geometry (geometry :x "0%"
-        :y "-44px"
+        :y "0px"
+        :width "100%"
+        :height "100%"
+        :anchor "bottom center")
+    :stacking "overlay"
+    :reserve (struts :distance "40px" :side "top")
+    :windowtype "dock"
+    :wm-ignore false
+    :exclusive "false"
+    :namespace "window-background"
+"")
+
+(defwindow dropdown-animation
+    :monitor 0
+    :geometry (geometry :x "0%"
+        :y "0px"
         :width "100%"
         :height "100%"
         :anchor "top center")
@@ -10,5 +25,5 @@
     :windowtype "dock"
     :wm-ignore false
     :exclusive "true"
-    :namespace "window-background"
+    :namespace "dropdown-animation"
 "")
