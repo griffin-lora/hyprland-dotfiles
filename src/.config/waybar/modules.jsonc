@@ -263,7 +263,7 @@
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "alacritty -e nmtui"
+        "on-click": "hyprctl dispatch exec \"[float;size 70% 594]\" \"alacritty --config-file ~/.alacritty-nopadding.toml -e nmtui\""
     },
 
     // Battery
@@ -277,7 +277,7 @@
         "format-charging": "   {capacity}%",
         "format-plugged": " {capacity}%",
         // "format-alt": "{icon}   {time}",
-        "on-click": "gnome-power-statistics",
+        "on-click": "hyprctl dispatch exec \"[float;size 70% 70%]\" gnome-power-statistics",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""],
@@ -303,7 +303,7 @@
             "default": ["", "", ""]
         },
         "tooltip": false,
-        "on-click": "pavucontrol"
+        "on-click": "hyprctl dispatch exec \"[float;size 70% 70%]\" pavucontrol"
     },
 
     // Bluetooth
