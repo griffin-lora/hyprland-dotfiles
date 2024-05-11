@@ -53,6 +53,7 @@
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1"
         },
+        "format": "",
         "separate-outputs": true
     },
 
