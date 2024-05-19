@@ -31,6 +31,7 @@
     // Modules Left
     "modules-left": [
         "clock",
+        "hyprland/language",
         "hyprland/window"
     ],
 
